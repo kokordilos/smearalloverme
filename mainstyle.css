@@ -1,0 +1,150 @@
+@font-face {
+    font-family: 'gooseberry_juiceregular';
+    src: url('font/gooseberry_juice-webfont.woff2') format('woff2'),
+         url('font/gooseberry_juice-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@media screen and (min-width: 1000px) {
+    .menu-item{
+        font-family: 'Lobster', cursive; 
+        font-weight: bold;   
+        color: #2c14b7;
+        margin: 0px;
+        padding: 2px;
+        font-size: 25px;
+    }
+}
+
+
+
+body {
+    background-image: url("resources/background_fruits.jpg");
+    margin: 0px;
+}
+
+a {
+    text-decoration-line: none;
+    color: unset;
+}
+
+
+.fullview   {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.header {
+    width: 100%;
+    background-color: #db7032bb ;  
+    flex-grow: 1;
+}
+.header_content {
+    margin: 20px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.head_buttons{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.menu{
+    list-style-type: none;
+    -webkit-padding-start: 0px;
+}
+
+.menu-item{
+    font-family: 'Lobster', cursive; 
+    font-weight: bold;   
+    color: #b71427;
+    margin: 0px;
+    padding: 2px;
+    font-size: 25px;
+}
+
+
+.company_name{
+    width: 100%;    
+}
+
+.main {        
+    width: 100%;
+    max-height: 100%;   
+    min-height: 50%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    flex-grow: 1;
+    
+}
+.item{
+    width: 300px;
+    min-height: 300px; 
+    border-bottom: 1px solid #b71427;
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    justify-content: space-around;
+    -webkit-padding-bottom: 20px;
+
+}
+
+img{
+    width: 250px;
+    height: 250px;    
+}
+
+h2 {
+    font-family: 'Lobster', cursive;    
+    color: #b71427;
+    margin: 0px;
+    padding: 10px;
+    font-size: 25px;
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+    color: #b71427;
+    margin: 0px;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+h3{
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+    color: #b71427;
+    font-size: 20px;
+    margin: 0px;
+}
+
+.footer {
+    width: 100%;
+    background-color: #db7032bb ;
+    flex-grow: 1;
+}
+.footer_content{
+    margin: 20px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.loginbtn{
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+    color: #b71427;
+    font-size: 25px;
+    margin: 0px;
+}
+
+
