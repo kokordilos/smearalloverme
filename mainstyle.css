@@ -6,20 +6,6 @@
     font-style: normal;
 
 }
-
-@media screen and (min-width: 1000px) {
-    .menu-item{
-        font-family: 'Lobster', cursive; 
-        font-weight: bold;   
-        color: #2c14b7;
-        margin: 0px;
-        padding: 2px;
-        font-size: 25px;
-    }
-}
-
-
-
 body {
     background-image: url("resources/background_fruits.jpg");
     margin: 0px;
@@ -35,8 +21,7 @@ a {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    
+    justify-content: space-between;    
 }
 .header {
     width: 100%;
@@ -44,15 +29,16 @@ a {
     flex-grow: 1;
 }
 .header_content {
-    margin: 20px;    
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-direction: row-reverse;
+    justify-content: space-between;
 }
 .head_buttons{
     width: 100%;
     display: flex;
     flex-direction: row-reverse;
+    margin: 0px;
+    padding: 10px;
 }
 
 .menu{
@@ -66,14 +52,15 @@ a {
     color: #b71427;
     margin: 0px;
     padding: 2px;
-    font-size: 25px;
+    font-size: 20px;
 }
-
-
-.company_name{
-    width: 100%;    
+.company_name_box{   
+    margin: 0px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-
 .main {        
     width: 100%;
     max-height: 100%;   
@@ -134,9 +121,12 @@ h3{
 }
 .footer_content{
     margin: 20px;    
+}
+
+#menu-footermenu{
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .loginbtn{
@@ -148,3 +138,66 @@ h3{
 }
 
 
+@media only screen and (min-width: 680px) {
+    /* For deskotp : */
+    .main {
+        max-height: 80%;    
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap:wrap;
+        justify-content: space-around;
+
+    }
+    h1 {
+        font-family: 'Lobster', cursive;
+        font-weight: bold;
+        color: #b71427;
+        margin: 0px;
+        padding: 10px;
+        font-size: 50px;
+        text-align: center;
+    }
+    
+
+    .item{
+        width: 300px;
+        min-height: 300px; 
+        border-bottom: none;
+        display: flex;
+        flex-direction: column ;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .menu-item{
+        font-family: 'Lobster', cursive; 
+        font-weight: bold;   
+        color: #b71427;
+        margin: 0px;
+        padding: 2px;
+        font-size: 25px;
+    }
+    
+    img{
+        width: 200px;
+        height: 200px;    
+        
+    }
+    h3{
+        font-family: 'Lobster', cursive;
+        font-weight: bold;
+        color: #b71427;
+        font-size: 25px;
+        margin: 0px;
+    }
+    .header_content {
+        margin: 20px;    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+  
+    
+}
